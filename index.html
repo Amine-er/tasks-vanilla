@@ -4,9 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/src/main.js" defer type="module"></script>
-    <title>Tasks App</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Tasks Vanilla</title>
   </head>
   <body>
-    <div id="app"></div>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">📝 MyTasks</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tasks</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="app-container">
+      <div class="task-app">
+        <div class="header">
+          <h1>Tasks</h1>
+          <button class="options-btn">⋮</button>
+        </div>
+        <form class="add-task-form">
+          <input type="text" placeholder="Add a task..." />
+          <button type="submit">+</button>
+        </form>
+        <ul class="task-list">
+          <li class="task-item">
+            <input type="checkbox" id="task1" />
+            <label for="task1">SQL Exam Preparation</label>
+          </li>
+          <li class="task-item">
+            <input type="checkbox" id="task2" />
+            <label for="task2">Complete Js course</label>
+          </li>
+          <li class="task-item">
+            <input type="checkbox" id="task3" />
+            <label for="task3">Mastering Git</label>
+          </li>
+          <li class="task-item">
+            <input type="checkbox" id="task4" />
+            <label for="task4">Google tasks clone project</label>
+          </li>
+          <li class="task-item">
+            <input type="checkbox" id="task5" />
+            <label for="task5">AWS</label>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

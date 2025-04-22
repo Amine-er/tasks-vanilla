@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Task 1",
+    "description": "SQL Exam Preparation",
+    "status": "completed"
+  },
+  {
+    "name": "Task 2",
+    "description": "Complete Js course",
+    "status": "in-progress"
+  },
+  {
+    "name": "Task 3",
+    "description": "Mastering Git",
+    "status": "to-do"
+  },
+  {
+    "name": "Task 4",
+    "description": "Google tasks clone project",
+    "status": "to-do"
+  },
+  {
+    "name": "Task 5",
+    "description": "AWS",
+    "status": "to-do"
+  }
+]
