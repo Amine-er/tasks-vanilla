@@ -1,12 +1,12 @@
-/*
-window.addEventListener('DOMContentLoaded', () => {
-    let nav = document.querySelector('nav');
-    console.log(nav);
-    nav.innerHTML = `
-        <h2>Hello DOM</h2>
-        <p> This is HTML within a JavaScript string</p>`
-});*/
+import Store from './services/Store.js';
+import API from './services/API.js';
+import { loadTasks } from "./services/Task.js";
 
-window.addEventListener('DOMContentLoaded', event => {
+window.app = {}
+app.store = Store;
+app.API = API
 
+window.addEventListener('DOMContentLoaded', async () => {
+    console.log('DOM fully loaded and parsed');
+    await loadTasks();
 });
