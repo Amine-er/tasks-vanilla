@@ -16,8 +16,6 @@ body {
     background-color: white;
     border-bottom: 1px solid #ddd;
     padding: 1rem 2rem;
-    width: 100%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .nav-content {
@@ -40,14 +38,12 @@ body {
     gap: 1.5rem;
 }
 
-.nav-links li a {
+.nav-link {
     text-decoration: none;
     color: #333;
-    font-size: 1rem;
-    transition: color 0.2s ease;
+    transition: color 0.2s;
 }
-
-.nav-links li a:hover {
+.nav-link.active, .nav-link:hover {
     color: #1976d2;
 }
 
@@ -77,10 +73,6 @@ body {
     align-items: center;
 }
 
-.header h1 {
-    font-size: 1.8rem;
-}
-
 .options-btn {
     background: none;
     border: none;
@@ -93,12 +85,11 @@ body {
     gap: 0.5rem;
 }
 
-.add-task-form input {
-    flex: 1;
-    padding: 0.6rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
+#new-task-input {
+    flex:1;
+    padding:0.6rem;
+    border:1px solid #ccc;
+    border-radius:8px;
 }
 
 .add-task-form button {
@@ -125,6 +116,15 @@ body {
     font-size: 1rem;
 }
 
-.task-item input[type="checkbox"] {
-    transform: scale(1.3);
+.task-item input {
+    transform:scale(1.3);
+    cursor:pointer;
+}
+
+.task-item .delete-btn {
+    margin-left:auto;
+    background:none;
+    border:none;
+    font-size:1.2rem;
+    cursor:pointer;
 }

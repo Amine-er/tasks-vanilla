@@ -1,27 +1,26 @@
 [
   {
-    "name": "Task 1",
-    "description": "SQL Exam Preparation",
-    "status": "completed"
+    "id": 1,
+    "title": "SQL Exam Preparation",
+    "completed": false },
+  {
+    "id": 2,
+    "title": "Complete Js course",
+    "completed": true
   },
   {
-    "name": "Task 2",
-    "description": "Complete Js course",
-    "status": "in-progress"
+    "id": 3,
+    "title": "Mastering Git",
+    "completed": false
   },
   {
-    "name": "Task 3",
-    "description": "Mastering Git",
-    "status": "to-do"
-  },
-  {
-    "name": "Task 4",
+    "id": 4,
     "description": "Google tasks clone project",
-    "status": "to-do"
+    "completed": true
   },
   {
-    "name": "Task 5",
+    "id": 5,
     "description": "AWS",
-    "status": "to-do"
+    "completed": false
   }
 ]
