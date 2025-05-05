@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <base href="/" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/src/main.js" defer type="module"></script>
@@ -14,24 +15,29 @@
         <ul class="nav-links">
           <li><a class = "nav-link" href="/Home">Home</a></li>
           <li><a class = "nav-link" href="/Tasks">Tasks</a></li>
-          <li><a class = "nav-link" href="/Loging">Login</a></li>
+          <li><a class = "nav-link" href="/Login">Login</a></li>
         </ul>
       </div>
     </nav>
-    <div class="app-container">
-      <div class="task-app">
-        <div class="header">
-          <h1>Tasks</h1>
-          <button class="options-btn">⋮</button>
+    <main>
+      <section id="content">
+        <p>This is a simple tasks application.</p>
+      </section>
+    </main>
+    <template id="task-page-template">
+      <div class="app-container">
+        <div class="task-app">
+          <div class="header">
+            <h1>Tasks</h1>
+            <button class="options-btn">⋮</button>
+          </div>
+          <form id="add-task-form" class="add-task-form">
+              <input id="new-task-input" type="text" placeholder="Add a task..." />
+            <button type="submit">+</button>
+          </form>
+          <ul id="task-list" class="task-list"></ul>
         </div>
-        <form id="add-task-form" class="add-task-form">
-          <label>
-            <input id="new-task-input" type="text" placeholder="Add a task..." />
-          </label>
-          <button type="submit">+</button>
-        </form>
-        <ul id="task-list" class="task-list"></ul>
       </div>
-    </div>
+    </template>
   </body>
 </html>

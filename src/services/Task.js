@@ -20,7 +20,7 @@ export const renderTasks = () => {
 export const loadTasks = async () => {
     const tasks = await app.API.getAllTasks();
     store.tasks = tasks;
-    renderTasks();
+    //renderTasks();
 }
 
 // Add a new task
